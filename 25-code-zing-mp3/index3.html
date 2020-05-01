@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List and Table</title>
+    <!--        <link rel="stylesheet" href="./style.css" type="text/css">-->
+    <link href="./fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+    <style>
+        .danh-sach-nhac{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .danh-sach-nhac .hinh-anh{
+            height: 130px;
+            width: 130px;
+            background-image: url("https://thongtinsao.com/wp-content/uploads/2017/12/tieu-su-ca-si-bao-anh-16.jpg");
+            background-size: cover ;
+            background-position: center;
+            flex-shrink: 0;
+        }
+
+        .danh-sach-nhac .number-image{
+            background: linear-gradient(0deg, rgba(0,0,0,0.8729866946778712) 0%, rgba(1,1,10,0) 100%);
+            height: 100%;
+            color: #eeeeee;
+            font-size: 40px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+
+        .danh-sach-nhac .number-image:hover {
+            background: rgba(9,9,9,0.8);
+            opacity: 1;
+        }
+
+
+        /*HINH ANH BAI HAT*/
+        .danh-sach-nhac .content{
+            margin-left: 10px ;
+            font-family: 'Arial', sans-serif;
+        }
+        .content .ten-bai-hat{
+            font-size:30px;
+            font-weight: bolder;
+            padding-bottom: 10px;
+        }
+        .content .ten-ca-si{
+            font-size: 20px;
+            padding-bottom: 5px;
+            color: #777;
+        }
+        .content .so-luot-xem{
+            font-size: 18px;
+            color: #aaaaaa;
+        }
+
+    </style>
+</head>
+<body>
+<div class="danh-sach-nhac">
+    <div class="hinh-anh">
+        <div class="number-image">
+            <i class="fas fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Sợ phải kết thúc </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://i.ytimg.com/vi/dmNjMODpak8/maxresdefault.jpg')">
+        <div class="number-image">
+            <i class="fas fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Ngày anh xa em </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://vtv1.mediacdn.vn/thumb_w/650/2019/9/10/tieu-su-ca-si-dinh-huong-the-voice-7616-15681070398961530097955-crop-1568107052148182113595.jpg')">
+        <div class="number-image">
+            <i class="fas fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Trai tim anh cũng biết đau  </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://photo-1-baomoi.zadn.vn/w1000_r1/2019_09_25_322_32317488/2fc3d62d936a7a34237b.jpg')">
+        <div class="number-image">
+            <i class="fas fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Tình tan vỡ </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://i.ytimg.com/vi/dmNjMODpak8/maxresdefault.jpg')">
+        <div class="number-image">
+            <i class="fas fa-play-circle"></i>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Tìm lại bầu trời </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://vtv1.mediacdn.vn/thumb_w/650/2019/9/10/tieu-su-ca-si-dinh-huong-the-voice-7616-15681070398961530097955-crop-1568107052148182113595.jpg')">
+        <div class="number-image">
+            <span>03</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Tình cũ </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+<div class="danh-sach-nhac">
+    <div class="hinh-anh" style="background-image: url('https://photo-1-baomoi.zadn.vn/w1000_r1/2019_09_25_322_32317488/2fc3d62d936a7a34237b.jpg')">
+        <div class="number-image">
+            <span>04</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="ten-bai-hat">Giọt nước mắt cuối cùng </div>
+        <div class="ten-ca-si">Nhật Phong </div>
+        <div class="so-luot-xem">2,535</div>
+    </div>
+</div>
+
+</body>
+</html>

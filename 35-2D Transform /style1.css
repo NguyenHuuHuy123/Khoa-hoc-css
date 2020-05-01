@@ -1,0 +1,48 @@
+/*
+CSS TRANSFORM
+- translator
+- rotate
+- scale
+- skew
+- matrix
+*/
+
+/*
+CSS TRANSITION
+transition: "thuộc tính" "thời gian "
+*/
+
+.image-song{
+    width: 200px;
+    height: 200px;
+    background-image: url("nacymolan.jpg");
+    /*background-position: 0px 1px;*/
+    background-size: cover;
+}
+
+.image-song .overlay{
+    background-color: rgba(0, 0, 0, 0.4);
+    /*opacity: 0;*/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.play-song{
+    height: 80px;
+    width: 80px;
+    transform: scale(0.8);
+    transition: all 0.3s;
+}
+
+.image-song:hover .overlay{
+    opacity: 1;
+}
+
+.image-song:hover .play-song{
+    transform: scale(1);
+}

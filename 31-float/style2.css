@@ -1,0 +1,30 @@
+.head{
+    height: 100px;
+    background-color: #FF8000;
+    text-align: center;
+    line-height: 100px;
+    font-weight: bolder;
+}
+.sidebar{
+    float: left;
+    width: 20%;
+}
+
+.content{
+    margin-left: 21%;
+    background-color: #aaaaaa;
+    height: 200px;
+}
+.container:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.footer{
+    height:100px ;
+    text-align: center;
+    line-height: 100px;
+    background-color: #FF8000;
+    font-weight: bolder;
+}

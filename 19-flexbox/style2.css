@@ -1,0 +1,37 @@
+/*
+flex-basis: Tăng hoặc giảm nội dung trong một phần tử.
+
+flex-grow : Được sử dụng khi "contain" còn thừa khoảng trống. Phần thừa ấy sẽ được chia đều cho các phần tử trong contain.
+- Ở ví dụ phía dưới, khoảng trống sẽ được chia làm 4 phần bằng nhau, và cộng vào các element tương ứng.
+- Ứng dụng flex-grow vào việc respoinse, thêm chiều dài vào phần tử mình muốn cho thêm nội dung
+
+flex-shrink: (mặc định là 1) Được sử dụng trong trường hợp chiều dài của thiết bị bị co giãn -> Các phần tử phía trong sẽ tự thay đổi kích thước. Nếu sử dụng flex-shrink:0 -> thì kích thước phần tử được sử dụng sẽ không thay đổi khi co dãn thiết bị.
+
+order : thay đổi thứ tự sắp xếp của các phần tử trong "contain", mặc đinh là 0, những phần tử có order lớn hơn sẽ được đặt trước.
+
+
+*/
+
+.contain {
+    display: flex;
+    flex-direction: row; /*Căn chỉnh phần từ trong box theo chiều ngang (row) hoặc chiều dọc (column)*/
+    /*height: 200px;*/
+    background-color: #ddd;
+}
+.child-1{
+    background-color: red;
+    flex-basis: 100px;
+    /*flex-grow: 1;*/
+}
+.child-2{
+    background-color: green;
+    flex-basis: 300px;
+    flex-shrink: 0;
+    /*flex-grow:2 ;*/
+    order: 1;
+}
+.child-3{
+    background-color: blue;
+    flex-basis: 100px;
+    /*flex-grow: 1;*/
+}

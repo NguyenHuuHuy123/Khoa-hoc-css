@@ -1,0 +1,45 @@
+.danh-sach-nhac{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.danh-sach-nhac .hinh-anh{
+    height: 130px;
+    width: 130px;
+    background-image: url("https://thongtinsao.com/wp-content/uploads/2017/12/tieu-su-ca-si-bao-anh-16.jpg");
+    background-size: cover ;
+    background-position: center;
+}
+.danh-sach-nhac .number-image{
+    background: linear-gradient(0deg, rgba(0,0,0,0.8729866946778712) 0%, rgba(1,1,10,0) 100%);
+    height: 100%;
+    color: #eeeeee;
+    font-size: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+/*HINH ANH BAI HAT*/
+.danh-sach-nhac .content{
+    margin-left: 10px ;
+    font-family: 'Arial', sans-serif;
+}
+.content .ten-bai-hat{
+    font-size:30px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.content .ten-ca-si{
+    font-size: 20px;
+    padding-bottom: 5px;
+    color: #777;
+}
+.content .so-luot-xem{
+    font-size: 18px;
+    color: #aaaaaa;
+}

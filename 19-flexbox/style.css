@@ -1,0 +1,17 @@
+.contain {
+    display: flex;
+    flex-direction: column; /*Căn chỉnh phần từ trong box theo chiều ngang (row) hoặc chiều dọc (column)*/
+    justify-content: center; /*Khoảng cách giữa các phần tử đều nhau, hay sát nhau và căn chỉnh phần tử theo chiều ban đầu flex-start center flex-end  */
+    align-items: center; /* Căn chỉnh phần tử theo chiều vuông góc với chiều các phần tử ban đầu. flex-start center flex-end */
+    height: 200px;
+    background-color: #ddd;
+}
+.child-1{
+    background-color: red;
+}
+.child-2{
+    background-color: green;
+}
+.child-3{
+    background-color: blue;
+}

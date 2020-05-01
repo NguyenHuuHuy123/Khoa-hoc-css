@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Arial', sans-serif;
+        }
+        #menu ul{
+            list-style-type: none;
+            background: #FF8000;
+            text-align: center;
+        }
+        #menu ul li{
+            display: inline-table;
+            height: 40px;
+            width: 120px;
+            line-height: 40px;
+            position: relative;
+        }
+
+        #menu ul li a{
+            text-decoration: none;
+            font-weight: bolder;
+            display: block;
+            color: #eeeeee;
+            text-transform: uppercase;
+        }
+
+        #menu ul li a:hover{
+            background: #eeeeee;
+            color: black;
+        }
+        #menu ul li > .sub-menu{
+            display: none;
+            position: absolute;
+        }
+        #menu ul li > .sub-menu-2{
+            display: none;
+            position: absolute;
+            left: 120px;
+            top: 0px;
+        }
+        #menu ul li ul li:hover .sub-menu-2{
+            display: block;
+        }
+
+        #menu ul li:hover .sub-menu{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <ul>
+        <li><a href="#">Item1</a></li>
+        <li>
+            <a href="#">Item2</a>
+            <ul class="sub-menu">
+                <li><a href="#">Item1</a></li>
+                <li>
+                    <a href="#">Item2</a>
+                    <ul class="sub-menu-2">
+                        <li><a href="#">Item1</a></li>
+                        <li><a href="#">Item2</a></li>
+                        <li><a href="#">Item3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Item3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Item3</a>
+            <ul class="sub-menu">
+                <li>
+                    <a href="#">Item1</a>
+                </li>
+                <li><a href="#">Item2</a></li>
+                <li>
+                    <a href="#">Item3</a>
+                    <ul class="sub-menu-2">
+                        <li><a href="#">Item1</a></li>
+                        <li><a href="#">Item2</a></li>
+                        <li><a href="#">Item3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Item4</a></li>
+    </ul>
+</div>
+</body>
+</html>

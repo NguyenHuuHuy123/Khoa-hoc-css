@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        body{
+            font-family: 'Arial', sans-serif;
+        }
+        .menu{
+            display: flex;
+            list-style-type: none;
+        }
+        .menu li{
+            padding: 8px 30px;
+            background-color: #eee;
+        }
+        a{
+            text-decoration: none;
+            font-weight: bolder;
+            text-transform: uppercase;
+            width: auto;
+        }
+
+        li:hover{
+            background-color: #777777;
+        }
+        .san-pham{
+            position: relative;
+        }
+        .sub-menu{
+            list-style-type: none;
+            position: absolute;
+            left:0px;
+            display: none;
+            /*bottom: 0px;*/
+        }
+        .san-pham:hover .sub-menu{
+            display: block;
+        }
+        ul.sub-menu{
+            padding: 0px;
+        }
+
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="#">Trang chu</a></li>
+    <li class="san-pham">
+        <a href="#">San pham</a>
+        <ul class="sub-menu">
+            <li><a href="#">San pham 1</a></li>
+            <li><a href="#">San pham 1</a></li>
+            <li><a href="#">San pham 1</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Gioi thieu</a></li>
+</ul>
+</body>
+</html>

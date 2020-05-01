@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List and Table</title>
+    <meta charset="UTF-8">
+    <!--        <link rel="stylesheet" href="./style.css" type="text/css">-->
+    <link href="./fontawesome-free-5.13.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.13.0-web/css/brands.css" rel="stylesheet">
+    <link href="./fontawesome-free-5.13.0-web/css/solid.css" rel="stylesheet">
+<!--
+position: relative  -> Gắn phần tử vào một trục Oxy. Từ đó có thể dịch chuyển phần tử tùy ý chỉ cần thêm vào các thuộc tính top, left, right, botton. Trục Oxy có đỉnh 0 là góc trên bên trái của phần tử.
+position: fixed; -> Gắn phần tử vào một trục Oxy, trong đó đỉnh O là đỉnh của một trong 4 góc của Body. Sử dụng thuộc tính top, left, right, botton (hai cặp liền kề nhau, ví dụ như top-left, top-right, botton-left. botton-right)để di chuyển phần tử. Vị trí phần tử sẽ cố định (không thay đổi) khi cuộn trang vì chỉ phụ thuộc vào thẻ body
+position: absolute -> Gắn phần tử vào một trục tọa độ xOy trong đó gốc tọa độ là vị trí tương đối vửa phần tử cha chứa nó nếu phần tử cha có thuộc tính position: relative.
+
+-->
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .contain .red{
+            background-color: red;
+            margin-bottom: 10px;
+        }
+        .contain .green{
+            background-color: green;
+        }
+        .contain .blue{
+            background-color: blue;
+        }
+
+        .relative{
+            height: 200px ;
+            width: 300px;
+            position: relative;
+            top: 10px;
+            left: 20px;
+        }
+
+        .fixed{
+            position: fixed;
+            top: 10px;
+            right: 100px;
+        }
+        .absolute {
+            position: absolute;
+            left: 5px;
+            bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div class="box red">Red</div>
+    <div class="box green relative">
+        <div class="box blue absolute"></div>
+    </div>
+    <div class="box blue fixed">fixed - co dinh - khong di chuyen</div>
+
+
+</div>
+
+</body>
+</html>

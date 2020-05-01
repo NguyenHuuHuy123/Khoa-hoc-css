@@ -1,0 +1,8 @@
+.contain{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+/*
+gird column: a/b;
+Ghi chu: Chia cột được chọn có kích thước từ sọc dọc a đến sọc dọc b
+*/

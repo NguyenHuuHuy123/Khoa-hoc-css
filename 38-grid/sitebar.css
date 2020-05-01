@@ -1,0 +1,31 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.danh-sach-tuan {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid #ddd;
+}
+.danh-sach-tuan .number{
+    font-size: 30px;
+    padding: 0 10px;
+    font-weight: bolder;
+}
+.danh-sach-tuan .content{
+    flex-grow: 1;
+}
+.danh-sach-tuan .ten-bai-hat{
+    /*font-weight: bolder;*/
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.danh-sach-tuan .ten-ca-si{
+    font-size: 15px;
+    color: #aaa;
+}
+.danh-sach-tuan .so-luot-xem{
+    font-size: 14px;
+    color: #aaa;
+}

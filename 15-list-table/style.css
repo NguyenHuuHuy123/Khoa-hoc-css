@@ -1,0 +1,47 @@
+body{
+    font-size: 20px;
+}
+
+
+ul.a{
+    list-style-type: circle;
+    list-style-position: inside;
+    /*    Dấu chấm đầu dòng ở phía bên trong*/
+}
+ul.b{
+    list-style-type: square;
+    list-style-position: outside;
+/*    Dấu chấm đầu dòng ở phía bên ngoài*/
+}
+ol.c{
+    /*list-style-type: upper-roman;*/
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+/*    Bỏ dấu chấm đầu dòng của danh sách
+*/
+}
+ol.d{
+    list-style-type: lower-alpha;
+}
+/*Dinh dang CSS*/
+.format-css-table{
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 100px;
+}
+.format-css-table th, td {
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid #ddd;
+    /*height: 20px;*/
+}
+th{
+    height: 40px;
+    text-align: left;
+}
+tr:hover{
+    background-color: #f5f5f5;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2
+}
